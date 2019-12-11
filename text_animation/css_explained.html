@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 2s infinite;
+}
+
+
+
+/* Standard syntax */
+@keyframes mymove {
+  /* 0% refers start of time interval*/
+  0%
+  {
+    clip-path: polygon(0% 47%, 15% 39%, 30% 50%, 41% 60%, 54% 66%, 70% 61%, 83% 56%, 91% 50%, 99% 47%, 100% 98%, 0% 98%);
+  }
+
+  50%
+  {
+    clip-path: polygon(1% 55%, 6% 64%, 15% 70%, 26% 70%, 34% 59%, 40% 52%, 46% 48%, 62% 51%, 73% 59%, 87% 64%, 98% 58%, 100% 98%, 2% 99%);
+  }
+
+    100%
+  {
+    clip-path: polygon(0% 47%, 15% 39%, 30% 50%, 41% 60%, 54% 66%, 70% 61%, 83% 56%, 91% 50%, 99% 47%, 100% 98%, 0% 98%);
+  }
+
+}
+</style>
+</head>
+<body>
+
+<h1>The @keyframes Rules</h1>
+
+<div></div>
+
+</body>
+</html>
